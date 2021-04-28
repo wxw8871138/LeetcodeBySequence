@@ -3,6 +3,8 @@ package LeetCode;
 import java.util.HashMap;
 
 public class Q36IsValidSudoku {
+    //用三个二维数分别表示行，列，3*3正方形中各数字是否出现，
+    //比如row[2][3]=1表示第二排3出现了一次。
     public boolean isValidSudoku(char[][] board) {
         int[][] row = new int[9][10];
         int[][] col = new int[9][10];

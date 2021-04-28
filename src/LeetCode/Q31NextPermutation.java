@@ -3,7 +3,7 @@ package LeetCode;
 import java.util.Arrays;
 
 public class Q31NextPermutation {
-    //从尾到头双指针，遇到左指针比右指针小的情况，将左指针换为右边所有数中最小的那个，再让左边升序排序。
+    //从尾到头双指针，遇到左指针比右指针小的情况，将左指针换为右边所有数中最小的那个，再通过逆序让左边升序排序。
     public void nextPermutation(int[] nums) {
         int left = nums.length-2;
         while (left >= 0 && nums[left] >= nums[left + 1]) {

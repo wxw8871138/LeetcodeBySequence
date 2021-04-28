@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Q6ZConvert {
-    //每一行都建立一个集合，按从前到后再从后到前的顺序放入各个集合中，用一个flag=-1/1来表示方向
+    //每一行都建立一个集合，按从前到后再从后到前的顺序放入各个集合中，用一个flag=-1/1来表示方向。
+    //每一行new一个StringBuilder,放进集合里，方便调用
     public String convert(String s, int numRows) {
         if (numRows<2) return s;
         List<StringBuilder> rows = new ArrayList<>();

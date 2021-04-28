@@ -1,7 +1,7 @@
 package LeetCode;
 
 public class Q5LongestPalindrome {
-    //DP，右指针先走
+    //DP，右指针先走，状态转移的时候要考虑r=l和rl相邻的情况
     public String longestPalindrome(String s) {
         if (s == null || s.length() < 2) {
             return s;
