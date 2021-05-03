@@ -24,4 +24,8 @@ public class NC119 {
         res = new ArrayList<>(queue);
         return res;
     }
+
+    public static void main(String[] args) {
+
+    }
 }
