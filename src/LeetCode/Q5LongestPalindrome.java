@@ -14,16 +14,16 @@ public class Q5LongestPalindrome {
         boolean[][] dp = new boolean[len][len];
         for (int r = 1; r < len; r++) {
             for (int l = 0; l < r; l++) {
-                if (s.charAt(l) == s.charAt(r) && (r-l<=2||dp[l+1][r-1])){
+                if (s.charAt(l) == s.charAt(r) && (r - l <= 2 || dp[l + 1][r - 1])) {
                     dp[l][r] = true;
                     if (r - l + 1 > maxLen) {
-                        maxLen = r-l+1;
+                        maxLen = r - l + 1;
                         maxStart = l;
                         maxEnd = r;
                     }
                 }
             }
         }
-        return s.substring(maxStart,maxEnd+1);
+        return s.substring(maxStart, maxEnd + 1);
     }
 }

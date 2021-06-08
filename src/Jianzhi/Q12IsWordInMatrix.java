@@ -14,7 +14,7 @@ public class Q12IsWordInMatrix {
     }
 
     private boolean dfs(char[][] board, char[] words, int i, int j, int k) {
-        if (!isInMatrix(board,i,j) || board[i][j] != words[k]) {
+        if (!isInMatrix(board, i, j) || board[i][j] != words[k]) {
             return false;
         }
         if (k == words.length - 1) {
